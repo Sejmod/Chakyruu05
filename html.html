@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мугалимге миң таазим — Чакыруу</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Библиотека для праздничного конфетти -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <!-- Стартовый экран -->
+    <div id="loader">
+        <button id="start-btn" class="btn-start">Чакырууну ачуу</button>
+    </div>
+
+    <!-- Интерактивный фон с частицами -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Основная карточка -->
+    <div id="card" class="invitation-card">
+        <!-- Фотография преподавателей -->
+        <img src="https://img.pravda.ru/image/preview/article/4/7/7/2417477_amp.jpeg" alt="Учителя" class="teacher-photo">
+        
+        <!-- Главный заголовок -->
+        <h1 class="crypt-text" data-text="Мугалимге миң таазим!"></h1>
+        
+        <!-- Уважительное приглашение -->
+        <p class="crypt-text invite-desc" data-text="Ардактуу агай-эжейлер! Сиздерди Мугалимдер күнүнө арналган майрамдык шоу-концертибизге чакырабыз!"></p>
+        
+        <!-- Блок с информацией о мероприятии (Дата, Время, Место) -->
+        <div class="event-details">
+            <div class="detail-box">
+                <span class="crypt-text detail-label" data-text="Датасы:"></span>
+                <span class="crypt-text detail-val" data-text="5-октябрь"></span>
+            </div>
+            <div class="detail-box">
+                <span class="crypt-text detail-label" data-text="Убактысы:"></span>
+                <span class="crypt-text detail-val" data-text="14:00"></span>
+            </div>
+            <div class="detail-box">
+                <span class="crypt-text detail-label" data-text="Өтүлүүчү жер:"></span>
+                <span class="crypt-text detail-val" data-text="Ч. Айтматов атындагы Жыйын зал "></span>
+            </div>
+        </div>
+
+        <!-- Информация о группах и кураторе -->
+        <div class="info-group">
+            <p class="crypt-text highlight" data-text="Куратор: Казыбаева Мирзат"></p>
+            <p class="crypt-text highlight" data-text="Группа: ПМ-1-24"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
